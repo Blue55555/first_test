@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="head_top wrap">
+            <div class="top_left">
+                <img src="img/logo.png" alt="">
+                <ul>
+                    <li class="ch">绿亿生态环境</li>
+                    <li class="en">LUYI ECOLOGICAL ENVIRONMENT</li>
+                </ul>
+            </div>
+            <div class="nav">
+                <div class="home"></div>
+                <div class="nav_bar">
+                    <ul>
+                        <li class="focus nav_home"><a href=""><img src="img/home.png" alt=""></a></li>
+                        <li class=""><a href=""><span>关于绿亿</span></a></li>
+                        <li class=""><a href=""><span>新闻动态</span></a></li>
+                        <li class=""><a href=""><span>服务项目</span></a></li>
+                        <li class=""><a href=""><span>成功案例</span></a></li>
+                        <li class=""><a href=""><span>联系我们</span></a></li>
+                        <li class="nav_trans"><a href=""><span>中/EN</span></a></li>
+                    </ul>
+                </div>
+                <div class="trans">0574-87302466</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <a href="" class="pre"></a>
+        <a href="" class="next"></a>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background:url(img/swiper.png) no-repeat center; background-size:auto 100%;">
+                    <a href=""></a></div>
+                <div class="swiper-slide"
+                    style="background:url(img/swiper2.png) no-repeat center; background-size:auto 100%;">
+                    <a href=""></a></div>
+                <div class="swiper-slide"
+                    style="background:url(img/swiper.png) no-repeat center; background-size:auto 100%;">
+                    <a href=""></a></div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <script type="text/javascript">
+            var mySwiper = new Swiper('.swiper-container', {
+                pagination: '.pagination',
+                paginationClickable: true,
+                autoplay: 5000,
+                loop: true
+                //其他设置
+            });
+            $('.banner .pre').on('click', function (e) {
+                e.preventDefault()
+                mySwiper.swipePrev()
+            })
+            $('.banner .next').on('click', function (e) {
+                e.preventDefault()
+                mySwiper.swipeNext()
+            })
+        </script>
+    </div>
+</body>
+
+</html>
